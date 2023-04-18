@@ -6,7 +6,6 @@ Author: Benjamin Calderaio, Jr.
 Date: April 17, 2023
 
 """
-import os
 import pandas as pd
 import logging as lg
 # from pypantypes.data_file_mgr import get_files, get_file

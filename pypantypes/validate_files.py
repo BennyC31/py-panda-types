@@ -6,7 +6,6 @@ Author: Benjamin Calderaio, Jr.
 Date: April 15, 2023
 
 """
-import os
 import pandas as pd
 import logging as lg
 
