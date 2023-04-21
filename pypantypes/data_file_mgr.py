@@ -9,7 +9,7 @@ Date: April 14, 2023
 import os
 import logging as lg
 
-lg.basicConfig(format='%(process)d-%(levelname)s-%(message)s', level=lg.DEBUG)
+lg.basicConfig(format='%(process)d-%(levelname)s-%(message)s', level=lg.CRITICAL)
 
 
 def get_file(fpath: str):

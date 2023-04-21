@@ -9,7 +9,7 @@ Date: April 15, 2023
 import pandas as pd
 import logging as lg
 
-lg.basicConfig(format='%(process)d-%(levelname)s-%(message)s', level=lg.DEBUG)
+lg.basicConfig(format='%(process)d-%(levelname)s-%(message)s', level=lg.CRITICAL)
 
 
 def validate_csv_files(file_list: list, column_headers: dict):

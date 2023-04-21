@@ -13,7 +13,7 @@ import logging as lg
 from .data_file_mgr import get_files, get_file
 from .validate_files import validate_csv_files
 
-lg.basicConfig(format='%(process)d-%(levelname)s-%(message)s', level=lg.DEBUG)
+lg.basicConfig(format='%(process)d-%(levelname)s-%(message)s', level=lg.CRITICAL)
 
 
 def clean_data(concat_df, column_headers):
