@@ -13,7 +13,7 @@ Reads csv files with same headers, concatenates the data into one data frame and
 * Keeps the data types passed in
 
 ## Version
-0.0.1
+0.0.2
 
 ## Authors
 Benjamin Calderaio, Jr.
@@ -22,7 +22,7 @@ Benjamin Calderaio, Jr.
 MIT License
 
 ## Available on Test PyPi
-(https://test.pypi.org/project/py-panda-types/0.0.1/)
+(https://test.pypi.org/project/py-panda-types/)
 
 Installation syntax is provided
 
