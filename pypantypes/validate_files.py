@@ -7,9 +7,9 @@ Date: April 15, 2023
 
 """
 import pandas as pd
-import logging as lg
+# import logging as lg
 
-lg.basicConfig(format='%(process)d-%(levelname)s-%(message)s', level=lg.CRITICAL)
+# lg.basicConfig(format='%(process)d-%(levelname)s-%(message)s', level=lg.CRITICAL)
 
 
 def validate_csv_files(file_list: list, column_headers: dict):
@@ -35,10 +35,11 @@ def validate_csv_files(file_list: list, column_headers: dict):
         hdrs = list(column_headers.keys())
         __handle_files(file_list, hdrs, valid_files, invalid_files)
     except TypeError as e:
-        lg.error(f'validate_csv_files TypeError: {e}')
+        # lg.error(f'validate_csv_files TypeError: {e}')
         raise
     except Exception as e:
-        lg.error(f'validate_csv_files Exception: {e}')
+        # lg.error(f'validate_csv_files Exception: {e}')
+        print(e)
 
     return valid_files, invalid_files
 
@@ -53,5 +54,5 @@ def __handle_files(file_list: list, hdrs: list, valid_files: list, invalid_files
             else:
                 invalid_files.append(file_list[i])
         except Exception as e:
-            lg.error(f'File Exception: {file_list[i]}')
+            # lg.error(f'File Exception: {file_list[i]}')
             invalid_files.append(file_list[i])

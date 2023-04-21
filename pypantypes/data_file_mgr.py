@@ -7,9 +7,9 @@ Date: April 14, 2023
 
 """
 import os
-import logging as lg
+# import logging as lg
 
-lg.basicConfig(format='%(process)d-%(levelname)s-%(message)s', level=lg.CRITICAL)
+# lg.basicConfig(format='%(process)d-%(levelname)s-%(message)s', level=lg.CRITICAL)
 
 
 def get_file(fpath: str):
@@ -28,7 +28,7 @@ def get_file(fpath: str):
         else:
             raise FileNotFoundError(f'File {fpath} not found!')
     except FileNotFoundError as e:
-        lg.error(f'get_file: {e}')
+        # lg.error(f'get_file: {e}')
         raise
 
 
@@ -52,5 +52,6 @@ def get_files(file_list: list):
             else:
                 files_not_exist.append(file_list[i])
         except Exception as e:
-            lg.error(f'get_files: {e}')
+            # lg.error(f'get_files: {e}')
+            print(e)
     return files_exist, files_not_exist
