@@ -13,7 +13,7 @@ Reads csv files with same headers, concatenates the data into one data frame and
 * Keeps the data types passed in
 
 ## Version
-0.0.2
+0.0.3
 
 ## Authors
 Benjamin Calderaio, Jr.

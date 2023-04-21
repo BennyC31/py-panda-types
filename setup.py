@@ -6,11 +6,11 @@ setuptools.setup(
     
     include_package_data=True,
     name='py-panda-types',
-    version='0.0.2',
+    version='0.0.3',
     description='Package for bundling data files into one Data Frame.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    install_requires=['pandas==2.0.0'],
+    install_requires=[],
     url='https://github.com/BennyC31/py-panda-types.git',
     author='Benjamin Calderaio, Jr.',
     author_email='bencalderaio@gmail.com',
